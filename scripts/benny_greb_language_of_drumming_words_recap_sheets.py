@@ -180,14 +180,12 @@ def get_header(num):
     \version "2.23.3"
 
     \header {
-    title = "The Language of Drumming"
-    composer = "Benny Greb"
-    subtitle = "Words Recap Sheet """ + num + "\"" + r"""
+    subtitle = "Benny Greb - The Language of Drumming - Words Recap Sheet """ + num + "\"" + r"""
     }
 
     \paper {
     #(set-paper-size "a4" 'landscape)
-    top-margin = 20
+    top-margin = 2
     line-width=24\cm
     ragged-right=##f
     system-count=1
@@ -204,7 +202,7 @@ def get_header(num):
     }
 
     \markup {
-        \vspace #5
+        \vspace #1
     }
     """
     return header
@@ -250,6 +248,99 @@ words_recap_sheet3 = \
     get_line(f"{radio2} | {radio1} | {university2} | {listentotheradio2r}")
 
 
+words_recap_sheet1r = \
+    get_line(f"{radio1r} | {radio1r} | {radio1r} | {radio2}") + \
+    get_line(f"{radio3r} | {radio3r} | {radio3r} | {university1}") + \
+    get_line(f"{university2r} | {university2r} | {university2r} | {listentotheradio1}") + \
+    get_line(f"{listentotheradio2r} | {listentotheradio2r} | {listentotheradio2r} | {radio1}") + \
+    get_line(f"{radio2r} | {radio2r} | {radio2r} | {radio3}")
+
+
+words_recap_sheet2r = \
+    get_line(f"{university1r} | {university2r} | {radio1r} | {listentotheradio1}") + \
+    get_line(f"{listentotheradio2r} | {radio2r} | {university1r} | {radio1}") + \
+    get_line(f"{listentotheradio1r} | {university2r} | {radio1r} | {university1}") + \
+    get_line(f"{radio3r} | {university1r} | {radio2r} | {university2}") + \
+    get_line(f"{radio1r} | {listentotheradio2r} | {university2r} | {university2}") + \
+    get_line(f"{listentotheradio1r} | {listentotheradio2r} | {radio1r} | {radio2}") + \
+    get_line(f"{radio3r} | {university1r} | {radio3r} | {university2}") + \
+    get_line(f"{university1r} | {listentotheradio2r} | {university2r} | {listentotheradio1}")
+
+
+words_recap_sheet3r = \
+    get_line(f"{radio3r} | {radio1r} | {university2r} | {listentotheradio1}") + \
+    get_line(f"{listentotheradio2r} | {university2r} | {radio1r} | {radio3}") + \
+    get_line(f"{radio1r} | {radio3r} | {radio2r} | {listentotheradio1}") + \
+    get_line(f"{listentotheradio2r} | {university2r} | {university1r} | {radio3}") + \
+    get_line(f"{radio2r} | {university2r} | {radio2r} | {listentotheradio1}") + \
+    get_line(f"{radio3r} | {university1r} | {listentotheradio1r} | {listentotheradio2}") + \
+    get_line(f"{university2r} | {listentotheradio1r} | {university2r} | {radio3}") + \
+    get_line(f"{listentotheradio2r} | {listentotheradio1r} | {university2r} | {university1}") + \
+    get_line(f"{radio2r} | {radio1r} | {university2r} | {listentotheradio2}")    
+
+
+words_recap_sheet1ra = \
+    get_line(f"{radio1r} | {radio1} | {radio1r} | {radio2}") + \
+    get_line(f"{radio3r} | {radio3} | {radio3r} | {university1}") + \
+    get_line(f"{university2r} | {university2} | {university2r} | {listentotheradio1}") + \
+    get_line(f"{listentotheradio2r} | {listentotheradio2} | {listentotheradio2r} | {radio1}") + \
+    get_line(f"{radio2r} | {radio2} | {radio2r} | {radio3}")
+
+
+words_recap_sheet2ra = \
+    get_line(f"{university1r} | {university2} | {radio1r} | {listentotheradio1}") + \
+    get_line(f"{listentotheradio2r} | {radio2} | {university1r} | {radio1}") + \
+    get_line(f"{listentotheradio1r} | {university2} | {radio1r} | {university1}") + \
+    get_line(f"{radio3r} | {university1} | {radio2r} | {university2}") + \
+    get_line(f"{radio1r} | {listentotheradio2} | {university2r} | {university2}") + \
+    get_line(f"{listentotheradio1r} | {listentotheradio2} | {radio1r} | {radio2}") + \
+    get_line(f"{radio3r} | {university1} | {radio3r} | {university2}") + \
+    get_line(f"{university1r} | {listentotheradio2} | {university2r} | {listentotheradio1}")
+
+
+words_recap_sheet3ra = \
+    get_line(f"{radio3r} | {radio1} | {university2r} | {listentotheradio1}") + \
+    get_line(f"{listentotheradio2r} | {university2} | {radio1r} | {radio3}") + \
+    get_line(f"{radio1r} | {radio3} | {radio2r} | {listentotheradio1}") + \
+    get_line(f"{listentotheradio2r} | {university2} | {university1r} | {radio3}") + \
+    get_line(f"{radio2r} | {university2} | {radio2r} | {listentotheradio1}") + \
+    get_line(f"{radio3r} | {university1} | {listentotheradio1r} | {listentotheradio2}") + \
+    get_line(f"{university2r} | {listentotheradio1} | {university2r} | {radio3}") + \
+    get_line(f"{listentotheradio2r} | {listentotheradio1} | {university2r} | {university1}") + \
+    get_line(f"{radio2r} | {radio1} | {university2r} | {listentotheradio2}")        
+
+
+words_recap_sheet1rb = \
+    get_line(f"{radio1} | {radio1r} | {radio1} | {radio2r}") + \
+    get_line(f"{radio3} | {radio3r} | {radio3} | {university1r}") + \
+    get_line(f"{university2} | {university2r} | {university2} | {listentotheradio1r}") + \
+    get_line(f"{listentotheradio2} | {listentotheradio2r} | {listentotheradio2} | {radio1r}") + \
+    get_line(f"{radio2} | {radio2r} | {radio2} | {radio3r}")
+
+
+words_recap_sheet2rb = \
+    get_line(f"{university1} | {university2r} | {radio1} | {listentotheradio1r}") + \
+    get_line(f"{listentotheradio2} | {radio2r} | {university1} | {radio1r}") + \
+    get_line(f"{listentotheradio1} | {university2r} | {radio1} | {university1r}") + \
+    get_line(f"{radio3} | {university1r} | {radio2} | {university2r}") + \
+    get_line(f"{radio1} | {listentotheradio2r} | {university2} | {university2r}") + \
+    get_line(f"{listentotheradio1} | {listentotheradio2r} | {radio1} | {radio2r}") + \
+    get_line(f"{radio3} | {university1r} | {radio3} | {university2r}") + \
+    get_line(f"{university1} | {listentotheradio2r} | {university2} | {listentotheradio1r}")
+
+
+words_recap_sheet3rb = \
+    get_line(f"{radio3} | {radio1r} | {university2} | {listentotheradio1r}") + \
+    get_line(f"{listentotheradio2} | {university2r} | {radio1} | {radio3r}") + \
+    get_line(f"{radio1} | {radio3r} | {radio2} | {listentotheradio1r}") + \
+    get_line(f"{listentotheradio2} | {university2r} | {university1} | {radio3r}") + \
+    get_line(f"{radio2} | {university2r} | {radio2} | {listentotheradio1r}") + \
+    get_line(f"{radio3} | {university1r} | {listentotheradio1} | {listentotheradio2r}") + \
+    get_line(f"{university2} | {listentotheradio1r} | {university2} | {radio3r}") + \
+    get_line(f"{listentotheradio2} | {listentotheradio1r} | {university2} | {university1r}") + \
+    get_line(f"{radio2} | {radio1r} | {university2} | {listentotheradio2r}")    
+
+
 if __name__ == '__main__':
     import sys
 
@@ -258,9 +349,10 @@ if __name__ == '__main__':
 
     num = sys.argv[1]
 
+    if len(sys.argv) > 2:
+        arg = sys.argv[2]
+    else:
+        arg = ""
+
     print(get_header(num))
-    print({
-        "1": words_recap_sheet1,
-        "2": words_recap_sheet2,
-        "3": words_recap_sheet3
-    }[num])
+    print(eval("words_recap_sheet" + num + arg))
